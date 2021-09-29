@@ -1,4 +1,4 @@
-<div id='product-component-1632948016230'></div>
+<div id='collection-component-1632948570457'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
 (function () {
@@ -25,9 +25,9 @@
       storefrontAccessToken: '5168d2dcda3a5944f131e450636ca7f2',
     });
     ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent('product', {
-        id: '6637337641196',
-        node: document.getElementById('product-component-1632948016230'),
+      ui.createComponent('collection', {
+        id: '261947916524',
+        node: document.getElementById('collection-component-1632948570457'),
         moneyFormat: 'R%20%7B%7Bamount%7D%7D',
         options: {
   "product": {
@@ -36,7 +36,8 @@
         "@media (min-width: 601px)": {
           "max-width": "calc(25% - 20px)",
           "margin-left": "20px",
-          "margin-bottom": "50px"
+          "margin-bottom": "50px",
+          "width": "calc(25% - 20px)"
         }
       },
       "title": {
@@ -56,15 +57,12 @@
         "border-radius": "6px"
       }
     },
-    "buttonDestination": "checkout",
+    "buttonDestination": "modal",
     "contents": {
-      "img": false,
-      "title": false,
-      "price": false
+      "options": false
     },
-    "width": "280px",
     "text": {
-      "button": "Order now"
+      "button": "View product"
     }
   },
   "productSet": {
@@ -79,9 +77,7 @@
   "modalProduct": {
     "contents": {
       "img": false,
-      "imgWithCarousel": true,
-      "button": false,
-      "buttonWithQuantity": true
+      "imgWithCarousel": true
     },
     "styles": {
       "product": {
